@@ -1,4 +1,4 @@
-go-passpharase
+gopassphrase
 ===
 
 Generates passphrases of varying levels of security.
@@ -7,18 +7,20 @@ Given the large number of exposed passwords, it is no longer safe to select your
 
 Not all websites accept passphrases, in which case you need a random password. 
 
-bits	cost to break*
----		-------------
- 15 	< USD 0.01
- 30		< USD 0.01
- 45		< USD 0.01
- 60		USD 200
- 75		USD 6.5M
- 80 	USD 210M (NIST recommendation)
- 90		USD 215B
-105		USD 7,000T
-* In 2013 assumes USD 0.01/trillion combinations, using custom ASICs and USD 0.10/KWH
-** Cost should halve every 2 years, and it is reported that quantum computers wont make much difference for this kind of problem
+The best way to decide how much security you need is by how much it would cost someone to break your password. 
+
+    bits	cost to break*
+    ---		-------------
+     15 	< USD 0.01
+     30		< USD 0.01
+     45		< USD 0.01
+     60		USD 200
+     75		USD 6.5M
+     80 	USD 210M (NIST recommendation)
+     90		USD 215B
+    105		USD 7,000T
+    * In 2013 assumes USD 0.01/trillion combinations, using custom ASICs and USD 0.10/KWH
+    ** Cost should halve every 2 years, and it is reported that quantum computers wont make much difference for this kind of problem
 
 Suggestions for passwords:
 ---
@@ -29,19 +31,20 @@ Suggestions for passwords:
 
 Recommendations on keeping your computer secure
 ---
-* Use a 75bit passphrase for your finances i.e. anyone you give your credit card to, banks, brokerages, and email
-* Use a 60bit passphrase for non critical web sites
-* Use a 60bit passphrase for your desktop, if your hard drive is encrypted; otherwise use a 75bit one
+* Use a 75 bit passphrase for your finances i.e. anyone you give your credit card to, banks, brokerages, and email
+* Use a 60 bit passphrase for non critical web sites
+* Use a 60 bit passphrase for your desktop, if your hard drive is encrypted; otherwise use a 75 bit one
 * Use a password manager to keep track of unique passwords for each website that matters to you
 * Keep your passwords in a physical address book; a small one that you can keep in your wallet along with your money
-* Use current version of your favorite OS - OSX>Win, OpenBSD>FreeBSD>NetBSD>Linux, IOS>WP>Android
+* Use a secure OS: OSX>Win, OpenBSD>FreeBSD>NetBSD>Linux, IOS>WP>Android
+* Use the current version of your favorite OS
 * Keep your OS patched
 * Use a modern browser and keep it patched - Opera>Chrome>Firefox>IE>Safari
 * Don't use Flash in your browser, but if you have to have it, then use Chrome because it is built in and sandboxed
 * Keep all your applications patched
-* Don't fall for Phishing scams; assume any url in an email is bogus and will send you to a phishing site
+* Don't fall for phishing scams; assume any url in an email is bogus and will send you to a phishing site
 * Never use an application sent to you in an email
 * Never open documents sent to you from people you don't know
 * Only run applications that are signed and sandboxed
 * Keep your data backed up in multiple locations
-* When it is time to make a major OS upgrade (hopefully, yearly), backup, erase your OS drive, reinstall the OS and all Applications from scratch, then transfer your data back. Use a new passphrase.
+* When it is time to make a major OS upgrade (hopefully, yearly), backup, zero your OS drive, reinstall the OS and all Applications from scratch, then transfer your data back. Use a new passphrase.
